@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Dashboard</title>
+    <link rel="stylesheet" href="CSS/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="header">
+        <h2 id="time-date">
+          <span class="time"></span><span class="date"></span>
+        </h2>
+      </div>
+    </header>
+    <div class="dashboard-container">
+      <h1 class="dashboardHeader" id="dbHeader">Simon Nilsson Dashboard</h1>
+      <div class="row">
+        <div class="card">
+          <h3>Snabblänkar</h3>
+          <div class="links">
+            <ul class="quick-links"></ul>
+            <div class="add-link">
+              <button id="add-link-btn" class="add-link-btn">
+                <i class="fas fa-plus-circle"></i>Lägg till länk
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <h3>Vädret</h3>
+          <div id="weather-list" class="weather">
+            <div class="weatherBox">
+              <i id="weather-icon-current" class="weather-icon"></i>
+              <h4>Idag</h4>
+              <div class="weather-p">
+                <p id="weather-current"></p>
+                <p id="temperature-current"></p>
+              </div>
+            </div>
+            <div class="weatherBox">
+              <i id="weather-icon-tomorrow" class="weather-icon"></i>
+              <h4>Imorgon</h4>
+              <div class="weather-p">
+                <p id="weather-tomorrow"></p>
+                <p id="temperature-tomorrow"></p>
+              </div>
+            </div>
+            <div class="weatherBox">
+              <i id="weather-icon-dayafter" class="weather-icon"></i>
+              <h4 id="day-after-tomorrow"></h4>
+              <div class="weather-p">
+                <p id="weather-dayafter"></p>
+                <p id="temperature-dayafter"></p>
+              </div>
+            </div>
+            <div class="weatherBox">
+              <i id="weather-icon-3days" class="weather-icon"></i>
+              <h4 id="day-3days"></h4>
+              <div class="weather-p">
+                <p id="weather-3days"></p>
+                <p id="temperature-3days"></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <h3>PL Tabell</h3>
+          <div id="myAPI"></div>
+        </div>
+        <div class="card">
+          <h3>Anteckningar</h3>
+          <textarea class="textArea" id="textArea" rows="20"></textarea>
+        </div>
+      </div>
+      <footer id="footer">
+        <div>
+          <button class="background-btn" id="randomBackground">
+            <i class="fa-solid fa-rotate-right"></i>Slumpa ny bakgrund
+          </button>
+        </div>
+      </footer>
+    </div>
+    <script src="JavaScript/script.js"></script>
+  </body>
+</html>
